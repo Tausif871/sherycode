@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+/* main div code*/
+
+#main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  background-color: #82616d;
+}
+
+/* mtxt code start here */
+
+#mtxt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  z-index: 9999;
+}
+
+/* mtxt h1 */
+
+#mtxt h1 {
+  font-size: 12vw;
+  font-family: "voyage";
+  font-weight: 100;
+  white-space: nowrap;
+  user-select: none;
+  line-height: 1;
+}
+
+/* mtxt h3 */
+
+#mtxt h3 {
+  font-size: 6vw;
+  font-family: "voyage";
+  font-weight: 100;
+  white-space: nowrap;
+  user-select: none;
+  line-height: 1;
+}
+
+/* left part code  */
+
+#left {
+  position: relative;
+  height: 100%;
+  width: 45%;
+  overflow: hidden;
+}
+
+/* inside left partcode  */
+
+/* nav bar code left */
+
+#nav-lft {
+  height: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  color: #fff;
+  padding: 50px 60px;
+}
+
+/* nav-lft h3 and a code */
+
+#nav-lft a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+}
+
+#nav-lft h3 {
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+/* code img-cntr */
+
+#img-cntr {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  height: 50%;
+  background-image: url(https://images.unsplash.com/photo-1516726817505-f5ed825624d8?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+}
+
+/* img center inside txt div code  */
+
+#img-cntr #txt {
+  position: absolute;
+  top: 110%;
+  width: 100%;
+  /* background-color: red; */
+  display: flex;
+  color: #fff;
+}
+
+/* txt divided in to two parts */
+
+/* prt1 code */
+
+#img-cntr #txt #prt1 {
+  width: 30%;
+}
+
+#prt1 h5 {
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+/* part 2 code */
+
+#img-cntr #txt #prt2 {
+  width: 70%;
+}
+
+#prt2 p {
+  font-size: 10px;
+  line-height: 20px;
+}
+
+/* scroll div code start */
+
+#scroll {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: -10px;
+  left: 10%;
+  /* transform-origin: width height; */
+  transform-origin: 0% 50%;
+  transform: rotate(-90deg);
+  gap: 20px;
+}
+
+/* scroll line code  */
+
+#scroll #line {
+  width: 150px;
+  height: 2px;
+  background-color: #fff;
+}
+
+/* scroll h4 code */
+
+#scroll h4 {
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 10px;
+}
+
+/* center part code start here */
+
+#center {
+  height: 100%;
+  width: 45%;
+  background-image: url(https://images.unsplash.com/photo-1516726817505-f5ed825624d8?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  position: relative;
+}
+
+/* inside center card div */
+
+#center #card {
+  width: 260px;
+  height: 170px;
+  background-color: #fff;
+  position: absolute;
+  right: -5%;
+  bottom: 10%;
+  display: flex;
+  z-index: 9999;
+}
+
+/* inside card cimg and cicons code  */
+
+#cicons {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#cicons i {
+  font-size: 35px;
+}
+
+/* cimg */
+
+#cimg {
+  width: 80%;
+  height: 100%;
+  background-image: url(https://plus.unsplash.com/premium_photo-1667520043080-53dcca77e2aa?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  background-position: center;
+}
+
+/* right part code start here */
+
+#right {
+  height: 100%;
+  width: 10%;
+}
+
+/* relem code start */
+
+#relem {
+  height: 70%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  color: #fff;
+}
+
+/* icon i tag code */
+
+#relem i {
+}
+
+/* links tag code */
+
+#relem #rlinks {
+  display: flex;
+  gap: 50px;
+  transform: translateY(-150px) rotate(90deg);
+}
+
+#relem #rlinks a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+}

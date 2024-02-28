@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+/* position absolute  */
+
+#car1 {
+  position: absolute;
+  height: 320px;
+  width: 470px;
+  background-color: #000;
+}
+#car2 {
+  position: absolute;
+  height: 250px;
+  width: 300px;
+  background-color: #ff0000;
+}
+#car3 {
+  position: absolute;
+  height: 200px;
+  width: 270px;
+  background-color: #56ba7e;
+}
+
+/* posotion relative */
+
+/* #box {
+  height: 200px;
+  width: 200px;
+
+  background-color: blue;
+}
+
+#cube {
+  width: 15px;
+  height: 15px;
+  background-color: red;
+  position: absolute;
+  right: 50%;
+} */
+
+/* we are using  position absolute and we can move out cube outside from the box . */
+
+/* if we want to move cube inside the box we have to give position relative to box [it is parent of cube ] or we can give position relative to parent box so we can move cube children only in box . */
+
+#box {
+  height: 200px;
+  width: 200px;
+
+  background-color: blue;
+  position: relative;
+}
+
+#cube {
+  width: 15px;
+  height: 15px;
+  background-color: red;
+  position: absolute;
+  right: 50%;
+}
+
+/* it is only take 50% right inside the box space. */
