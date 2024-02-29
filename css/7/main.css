@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "montserrat";
+  color: #fff;
 }
 html,
 body {
@@ -14,5 +16,200 @@ body {
 #main {
   height: 100%;
   width: 100%;
-  background-color: red;
+  background-image: url(https://images.unsplash.com/photo-1499678329028-101435549a4e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  display: flex;
+  overflow: hidden;
+}
+
+/* nav bar code  */
+
+#nav {
+  height: 40px;
+  width: 100%;
+  z-index: 9999;
+  position: absolute;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 50px;
+}
+
+#nav > i {
+  display: none;
+}
+
+/* nav lft and rgt code */
+
+/* navlft */
+
+#navlft h1 {
+  font-size: 18px;
+}
+
+/* navrgt */
+
+#navrgt a {
+  text-decoration: none;
+  color: #fff;
+  margin-left: 20px;
+}
+
+#navrgt a #border-nav {
+  border-bottom: 5px solid #fff;
+  display: inline-block;
+}
+
+/* left code start  */
+
+#left {
+  width: 30%;
+  height: 100%;
+  background-color: #00000063;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 80px;
+  gap: 40px;
+  position: relative;
+  /* overflow: hidden; */
+}
+
+/* scroll code  */
+
+#left #scroll {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform-origin: 0 50%;
+  transform: translate(-50%, 0) rotate(-90deg);
+}
+
+/* scroll line code  */
+
+#scroll #line {
+  width: 100px;
+  height: 2px;
+  background-color: #fff;
+}
+
+/* .place code  */
+
+.place {
+  width: 100%;
+  color: #fff;
+}
+
+/* .place h4 and h6 code  */
+
+.place h4 {
+  opacity: 0.7;
+  font-weight: 500;
+  border-bottom: 1px solid #fff;
+  display: inline-block;
+  margin-bottom: 5px;
+  padding-bottom: 3px;
+}
+
+.place h6 {
+  font-weight: 600;
+  opacity: 0.4;
+}
+
+#left .place:nth-child(2) h4 {
+  border-bottom: 1px solid #fff;
+  font-size: 50px;
+  white-space: nowrap;
+  opacity: 1;
+}
+#left .place:nth-child(2) h6 {
+  font-size: 40px;
+  white-space: nowrap;
+}
+/* right code start here */
+
+#right {
+  width: 70%;
+  height: 100%;
+  /* background-color: blue; */
+}
+
+/* txt div code and inside h3 and h1 code */
+#right #txt {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translate(0, -50%);
+  text-align: right;
+}
+
+#txt h3 {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1;
+}
+#txt h1 {
+  font-size: 200px;
+  line-height: 1;
+  font-weight: 400;
+}
+
+/* inside txt input div code */
+
+#txt #input {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 40px;
+}
+
+#txt #input input {
+  width: 100%;
+  padding: 12px 12px;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  outline: none;
+  font-size: 25px;
+}
+
+#input i {
+  font-size: 20px;
+}
+
+#txt input::placeholder {
+  color: #fff;
+}
+
+/* smalll tag code */
+
+#right small {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+}
+
+/* Responsive part start here  */
+
+@media (max-width: 500px) {
+  #main #nav {
+    padding: 0 20px;
+    height: 70px;
+  }
+
+  #nav #right {
+    display: none;
+  }
+
+  #nav h1 {
+    font-size: 15px;
+  }
+  #nav i {
+    display: initial;
+  }
 }
