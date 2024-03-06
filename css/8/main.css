@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "gilroy";
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+/* main div or hero div code  */
+
+#main {
+  height: 100%;
+  width: 100%;
+  background-image: url(https://images.unsplash.com/photo-1632783242863-35e5ea3079d5?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  background-position: 0% 20%;
+}
+
+/* nav bar code start here */
+
+#nav {
+  height: 100px;
+  width: 100%;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 0 60px;
+}
+
+/* nav h5 code */
+
+#nav h5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 3px solid #fff;
+  color: #fff;
+  border-radius: 50%;
+}
+
+/* nav > nlinks code */
+
+#nav #nlinks {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#nlinks {
+  display: flex;
+  gap: 50px;
+}
+
+#nlinks a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  position: relative;
+}
+
+/* active id a tag */
+
+#nlinks #active::before {
+  content: "";
+  width: 30%;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+/* nav > i code */
+
+#nav i {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+}
+
+/* center part */
+
+#center {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(0%, -50%);
+  width: 50%;
+  padding: 30px 35px;
+  color: #fff;
+}
+
+/* center h6 and span part  */
+
+#center h6 span {
+  font-size: 30px;
+  line-height: 25px;
+}
+
+#center h6 {
+  display: flex;
+}
+
+/* center h1 tag part */
+
+#center h1 {
+  font-size: 90px;
+  line-height: 1;
+  margin-top: 30px;
+}
+
+/* center - txt cnter and line div and p tag */
+
+#center #txt-center {
+  display: flex;
+  margin-top: 20px;
+  gap: 15px;
+}
+
+#center #txt-center #line {
+  width: 150px;
+  height: 2px;
+  background-color: #fff;
+}
+
+#txt-center p {
+  width: 50%;
+  margin-top: -5px;
+  line-height: 25px;
+  font-size: 12px;
+}
+
+/* bottom part start here */
+
+#bottom {
+  width: 70%;
+  height: 18%;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 10px 25px;
+}
+
+/* cube div code */
+
+#cube {
+  height: 50px;
+  width: 50px;
+  background-color: #000;
+  color: #fff;
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
+
+/* section code */
+
+#bottom .section p {
+  opacity: 0.5;
+  font-size: 12px;
+  font-family: 600;
+}

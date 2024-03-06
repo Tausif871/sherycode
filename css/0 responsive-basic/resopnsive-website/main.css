@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "gilroy";
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+/* main div code  */
+
+#main {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+/* nav code */
+
+#nav {
+  height: 100px;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4vw;
+  border-bottom: 2px solid #dadada;
+}
+
+/* nav h2 code  */
+
+#nav h2 {
+  font-size: 2vw;
+  font-weight: 800;
+}
+
+/* nav link code  */
+
+#nav-links {
+  display: flex;
+  gap: 4vw;
+  align-items: center;
+}
+
+/* nav-link a tag code */
+
+#nav-links a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1vw;
+  font-weight: 600;
+}
+
+/* nav-link i tag code */
+
+#nav i {
+  font-size: 1.6vw;
+  font-weight: 600;
+  display: none;
+}
+
+/* content div code  */
+
+#content {
+  height: calc(100% - 100px); /* it is use to give arithmatic operatons*/
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+/* left div code inside content div  */
+
+#left {
+  height: 100%;
+  width: 50%;
+  background-color: red;
+  padding: 5vw 4vw;
+}
+
+/* right div inside content div code */
+
+#right {
+  height: 100%;
+  width: 50%;
+  /* background-color: blue; */
+}
+
+/* media queries */
+
+@media (max-width: 600px) {
+  /*  nav code */
+
+  #nav {
+    background-color: lightblue;
+    color: #fff;
+    padding: 0 5vw;
+    height: 70px;
+  }
+  #nav h2 {
+    font-size: 6vw;
+  }
+
+  #nav-links a {
+    display: none;
+  }
+
+  #nav-links i {
+    display: initial;
+    font-size: 6vw;
+  }
+}

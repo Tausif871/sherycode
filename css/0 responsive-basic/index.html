@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive-Learn</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <!-- main div -->
+    <div id="main">
+      <!-- responsive learn  -->
+
+      <!-- landscape = width use -->
+      <!-- potrait = height use  -->
+
+      <!-- responsive means to fit according to their device like landscape to potrait or potrait to landescape.  -->
+
+      <!-- units in code  -->
+
+      <div id="units">
+        <h1>Understanding the units</h1>
+        <!-- px -->
+        <p>
+          1. px [pixels] = it is fixed it can not be change if you make your
+          screen small or big .
+        </p>
+
+        <!-- % [percentage ] =  it means parent ke kitna guna h   -->
+
+        <p>
+          2. % = it depend or relative to the parent and takes height width
+          according to parent. percentage used in height and width.
+        </p>
+
+        <!-- vw and vh [ viewport height and viewport width ]-->
+
+        <p>
+          3. vw and vh [ viewport height and viewport width ] = it means it
+          depend on their full screen . and takes action according their screen
+          size and it moves according their screen.
+        </p>
+
+        <!-- vmax and vmin [viewport maximum and viewport minimum ]  -->
+
+        <p>
+          4. vmax and vmin [viewport maximum and viewport minimum ] = vmin is
+          the minimum between the viewport's height or width in percentage
+          depending on which is smaller. vmax is the maximum between the
+          viewport's height or width in percentage depending on which is bigger.
+          These units can change when the browser window is resized or the
+          orientation of a mobile phone changes. <br />
+          ex- if we give a txt 5vmax it adjust their and width to 5vmax , it do
+          not go smaller or it stops resposivenss and it takes responsives to vw
+          or vh units auto and takes their 5vmax value same means their size be
+          only 5vmax but it fit both according to their height and width. .
+        </p>
+
+        <!-- em and rem -->
+
+        <p>
+          em and rem = <br />
+          em is relative or depend to the font-size of its direct or nearest
+          parent. means we give parent 30px unit and give their child 1em it
+          takes 1em = 30px. font size is manadtory to give parent and use em in
+          their child.
+
+          <br />
+
+          rem is relative to the HTML (root) font-size . means it takes size
+          their all screen size . 1 rem = 16px.
+        </p>
+      </div>
+
+      <!-- layout flex vs absloute -->
+
+      <h1>layout of website - flex vs absloute</h1>
+
+      <h3>position</h3>
+      <p>abslote and relative</p>
+
+      <h2>flex - we have to use flexbox always.</h2>
+
+      <p>align items - align y = cross axis height use</p>
+      <br />
+      <p>justify content = x main axis width use</p>
+
+      <p>
+        flexwrap give to parent wrap proterty with if we want to wrap the
+        content same as heeight and width . flexwrap : wrap ;
+      </p>
+
+      <!-- media queris  -->
+
+      <h1>css media queries</h1>
+      <p>
+        medai queries means our screen behave according to our size increase or
+        decrease .
+      </p>
+
+      <p>method to write media queries.</p>
+
+      <p>
+        @media(max-width:600px) {}
+        <br />
+        it is the format to write media queires we can also give min and max
+        properties same time.
+        <br />
+        like this -
+        <br />
+
+        @media(min-width:200px) and (max-width:500px){}
+      </p>
+
+      <p>max width means zyada se zyada 600maximium use and if it goes 501 px it changes their size or color normal  whatever it is but if it under 600 px it can takes our designed size and if it out 600 px it becomes normal size as it create before responsiveness. </p>
+
+      <p>min-width means if our content </p>
+
+
+      <h1>key points to keep in mind to make website responsive.</h1>
+
+      <br>
+
+      <p>1. css flexbox use - </p>
+
+      <br>
+      <p>2. responsive typogrophy - text will be resposive</p>
+
+      <br>
+      <p>3. css units</p>
+
+      <br>
+      <br>
+
+      <p>4. mobile-first approach - when we made website we always have keep in mind our website how look in mobile.  </p>
+
+      <p>5. flexible images and media -  </p>
+
+      <br>
+    </div>
+  </body>
+</html>
