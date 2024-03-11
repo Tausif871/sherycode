@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "voyage";
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+/* left code start */
+
+#left {
+  width: 50%;
+  height: 100%;
+  /* background-color: royalblue; */
+  position: relative;
+  overflow: hidden;
+}
+
+/* inside left nav bar code */
+
+#nav {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 35px;
+  z-index: 9999;
+  position: relative;
+  color: #fff;
+  animation-name: mc;
+  animation-duration: 1s;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+/* h1 tag */
+
+#nav h1 {
+  font-size: 30px;
+}
+
+/* i tag */
+
+#nav i {
+  font-size: 30px;
+}
+
+/* inside left img tag */
+
+#left img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  z-index: 99;
+  animation-name: imgs;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+  opacity: 0;
+}
+
+#left > h1 {
+  position: absolute;
+  right: 3%;
+  bottom: 3%;
+  color: #fff;
+  z-index: 9999;
+  font-size: 80px;
+  text-align: right;
+  line-height: 75px;
+  animation-name: bc;
+  animation-delay: 2s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+/* overlay code */
+
+#overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ab1f1f;
+  z-index: 9;
+  animation-name: move;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+/* right code start here */
+
+#right {
+  height: 100%;
+  width: 50%;
+  position: relative;
+}
+
+/* img1 ang img2 and img3 code */
+
+#img1 {
+  position: absolute;
+  height: 180px;
+  width: 190px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  object-fit: cover;
+  animation-name: move;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+#img2 {
+  position: absolute;
+  height: 270px;
+  width: 220px;
+  top: 50%;
+  left: 10%;
+  transform: translate(0, -50%);
+  object-fit: cover;
+  animation-name: move;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+#img3 {
+  position: absolute;
+  height: 160px;
+  width: 160px;
+  bottom: 0;
+  left: 50%;
+  object-fit: cover;
+  animation-name: move;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+/* h1 code */
+
+#right h1 {
+  font-size: 70px;
+  position: absolute;
+  rotate: -90deg;
+  right: -15%;
+  top: 24%;
+  animation-name: move;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+/* animation start */
+
+@keyframes move {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes imgs {
+  0% {
+    transform: rotate(30deg) scale(1.4);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(0) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes bc {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes mc {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
