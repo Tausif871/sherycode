@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "gilroy";
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* nav bar code start here  */
+
+#nav {
+  width: 100%;
+  height: 10vh;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4vw;
+}
+
+/* nav- link div code */
+
+#nav #links {
+  display: flex;
+  gap: 40px;
+}
+
+#nav #links a {
+  text-decoration: none;
+  color: #000;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* nav - button code */
+
+#nav button {
+  padding: 9px 32px;
+  background-color: #7fdd7f;
+  border: none;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 5px;
+  color: #1e641e;
+}
+
+/* home div code start here */
+#home {
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+}
+
+/* left code start here */
+
+#left {
+  width: 35%;
+  min-height: inherit;
+  position: relative;
+}
+
+/* left - txt div code */
+
+#left #txt {
+  position: absolute;
+  top: 10%;
+  right: -25%;
+  width: 90%;
+}
+
+#txt h1 {
+  font-size: 3.6vw;
+  line-height: 1;
+}
+
+#txt p {
+  margin: 2vw 0;
+  width: 50%;
+  line-height: 20px;
+  font-size: 12px;
+}
+
+#txt button {
+  background-color: #e0d4c8;
+  padding: 1vw 3.2vw;
+  color: #75695d;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 0.8vw;
+}
+
+/* center code start here */
+
+#center {
+  width: 40%;
+  min-height: inherit;
+  background-image: url(https://images.unsplash.com/photo-1614717668397-5252f17ee5b5?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  background-position: center;
+}
+
+/* right code start here  */
+
+#right {
+  width: 25%;
+  min-height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5vw;
+}
+
+/* circle code start */
+
+#circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 7vw;
+  height: 7vw;
+  border-radius: 50%;
+  background-color: #000;
+  color: #fff;
+}
+
+/* dets div code */
+
+#dets .col {
+  margin-top: 20px;
+}
+
+#dets .col h6 {
+  font-weight: 400;
+  opacity: 0.4;
+  margin-top: 4px;
+}
+
+/* icon div code  */
+
+#icon {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 4vw;
+}
