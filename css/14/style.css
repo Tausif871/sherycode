@@ -41,9 +41,17 @@ body {
   font-weight: 600;
 }
 
+/* nav - nav right code */
+
+#nav #nav-right {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
 /* nav - button code */
 
-#nav button {
+#nav #nav-right button {
   padding: 9px 32px;
   background-color: #7fdd7f;
   border: none;
@@ -51,6 +59,10 @@ body {
   font-weight: 600;
   border-radius: 5px;
   color: #1e641e;
+}
+
+#nav i {
+  display: none;
 }
 
 /* home div code start here */
@@ -151,4 +163,57 @@ body {
   display: flex;
   justify-content: space-between;
   padding-right: 4vw;
+}
+
+/* responsive part start here */
+
+@media (max-width: 500px) {
+  #nav #links {
+    display: none;
+  }
+
+  #nav i {
+    display: initial;
+  }
+
+  /* home div code */
+
+  #home {
+    flex-direction: column;
+  }
+
+  #home #left {
+    min-height: 10vh;
+    padding: 5vw;
+    width: 100%;
+  }
+
+  #home #left #txt {
+    position: static;
+  }
+
+  #left #txt h1 {
+    font-size: 6vw;
+  }
+
+  #left #txt p {
+    width: 100%;
+  }
+
+  #left #txt button {
+    font-size: 2.2vw;
+    padding: 3vw 6vw;
+  }
+
+  #center {
+    width: 100%;
+    min-height: 50vh;
+    background-position: center;
+  }
+
+  #right {
+    width: 100%;
+    min-height: 40vh;
+    padding: 5vw 10vw;
+  }
 }
