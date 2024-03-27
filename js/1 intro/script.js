@@ -6,7 +6,9 @@ here starting js lectures -->
 
       <!-- what is js ? -->
 
-      <!-- js is a scripting languages. scripting language used as the only language of web.  -->
+      <!-- js is a scripting languages. scripting language used as the only language of web.
+      it was managed by ecmascript means it improves js .
+       -->
 
       <!-- 
         
@@ -73,31 +75,53 @@ here starting js lectures -->
          */
 
 
+        //  javascript executes line by line if any line have error it shows error and doesn't go forward line, it stops there when it have some error.
 
 
 
 
 
-// 1. alert part 
+
+        // console, alert and prompt are the part of browser.
+
+
+
+
+
+//  *** 1. alert part 
 
 alert("hey");
 
 // alert pop a message if the browser load.
 
 
-// 2. prompts - it is use to ask questions and we can save answers in a variable. 
+//  *** 2. prompts - it is use to ask questions and we can save answers in a variable. it is the big brother of alert.
+
 // it asks a questions and show a input field to give answer.
+
+// ex -- 
 
 var ans = prompt("aur kaise ho?");
 
 console.log(ans);
 
+// if we give ans it stored in ans variable and if we print ans it shows our ans that we write.
 
-// 3. console warn error and log
+
+
+// **** 3. console warn error and log
 
 console.log("hi");
+// it prints only hi.
+
+
 console.warn("hiiii");
+// it makes a warning with yellow color sign and print hiii
+
+
 console.error("hy");
+
+// it shows error with red color  warning . 
 
 
 
