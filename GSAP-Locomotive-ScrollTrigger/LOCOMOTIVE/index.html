@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOCOMOTIVE-JS</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- locomotive rule is we do not give height width to their parent -->
+
+    <!-- locomotive use krne ke liye wrapper bhut zaruri hai , isi liye hum parent div banate hai locomotive ko use krne ke liye  -->
+
+    <!-- locomotive lagane ke liye humein 2 cdn chahiye -- 1 - locomotive  cdn , 2 - locomotive css in head tag -->
+
+    <div id="main">
+      <div id="page1"></div>
+      <div id="page2">
+        <div id="img-div">
+          <img
+            data-scroll
+            data-scroll-speed="5"
+            src="https://images.unsplash.com/photo-1502323777036-f29e3972d82f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+          />
+        </div>
+      </div>
+      <div id="page3"></div>
+    </div>
+
+    <!-- 1. Locomotive js cdn -->
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+
+    <!-- 2.  -->
+
+    <!--3. js code  -->
+
+    <script src="./script.js"></script>
+  </body>
+</html>
