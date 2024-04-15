@@ -1,0 +1,151 @@
+1. What is react?
+
+=> react is a js library used to build dynamic and interactive user interfaces. it is developed by facebook in 2011.
+
+   it is currently most used library for front end development and also used to create single page applications [SPA].
+
+2. How dom works ?
+
+=> DOM[Document Object Model] . in dom,  browser takes html and creates dom . in dom , js help us to modify dom based on user actions or      events. in big applications , working with dom becomes complicated.
+
+3. Problems with js?
+
+=> react has simpler mental model while js is cumbersome, error-prone, and hard to maintain.
+
+4. working with react?
+
+=> 1. we do not need to worry about querying and updating dom . 
+   2. react created a webpage with small and reusable components.
+   3.react will take care of creating and updating dom elements.
+   4. it saves a lot of times because lots of code written already in react.
+
+
+5. js vs react ?
+
+=> js - js is imperative means we have to define steps to reach our desire goal or state.
+
+   react - react is declaritive means we define the target ui state and the react figuers out how to reach that state.
+   
+   
+
+
+6. What is components in react ?
+
+=> components help us to write reusable, modular and better organized code. 
+   react application is a tree of components with APP.
+
+   ex - header is a component, footer , nav bar , hero  , these are all components  and many more .
+
+7. vs code ide we are using , some extension we have to install in vs code like - live server/preview, prettier, line wrap etc.
+
+
+8. how to create an react app in vs code ide for our project ?
+
+=> first, we have to install node js in our system.
+    official tool we are use CRA [ Creat React App]
+    we are using [vite modern tool] as tool to creat react app or project.
+    vite produces quick and small bundle size.
+    vite - use npm run dev to launch dev server.
+    use npm to start CRA.
+
+
+9. NPM [node package manager] - use for CRA 
+
+10. How to create a react projects ?
+
+=> We are first go to terminal in vs code or our system.
+
+   1. give command [npm create vite@latest + enter ] it install the latest vite pacakage for our project.
+   2.  it ask to y or no for installation . click y
+   3. it downloaded vite, after it ask that.
+
+   4. it ask, project name - give your project name [you can give any project name]
+   5. after that it ask for, framework select react as framework.
+   6. after that it ask for variant or language, select javascript.
+   7. it show done means it creates the project . after that it show us some command to run the project.
+   8. commands are like - [cd first-react-app, npm install, npm run dev]
+   9. cd first-react-app - it select the first-react-app folder or project that we are created.
+   10. npm install - it install the node pacakge manager's files or dependecies.
+   11. npm run dev - it launches our file into a server so we can see our projects and we do any changes it shows us in that server.
+
+
+11. Project structure?
+
+=> 
+   1. node modules - node modules is a ideally a node package that we do not have to do any changes or no touch that folder. in node modules  have dependecies of node. 
+
+   2. public - it contains staic files in that folder that file don't change. means it have images, favicons etc.
+
+   3. src - it is our main folder and it have our actual source code where we keep coding files in it . inside src folder we create 3 folder to work to write our code , so these folder are - components, assets, and style. 
+
+   assets - it have our images, fonts, and other static files.
+
+   components - reusable parts of the ui like buttons, header , nav etc.
+
+   style - our css code file.
+
+   it is a covention means it is a stuructures format of code.
+
+
+   4. eslintrc.cjs - it show us warning if we do some mistakes in our code and it shows our code is slow or fast.
+
+   5. .gitignore - it help us to ignore the files we want to ignore .
+
+   6. index.html - it the first file have our basic code.
+
+   7. package.json - it is a meta-data file means it have all information of our project, we can also change our name, version etc.
+
+   8.  vite.cofig.js - it the vite's own config file also we can modify vite .
+
+   9. pacakage-lock.json - it show current value of our project and dependencies.
+
+
+
+12. what is the react file extension?
+
+=> .js - it is use for javascript. it contains regular javascript code.
+
+   .jsx - it is use for react . it means javasceipt xml it combines js with html like tags, it makes it easier to design ui components.
+
+
+13. Functional component vs Class Copmpnent?
+
+=> Functional component -- 
+
+   it is initially stateless.
+   it can use hooks for the state and effects.
+   it is simpler and more concise.
+   it is more popular and widely used in react.
+
+Class component --
+
+   it is stateful means it can manage state.
+   it is use to access to lifecycyle methods.
+   it is verbose means it has more boilerplate.
+   it is not preffered any more.
+
+
+14. What is JSX?
+
+=> JSX determines how the ui will look where-ever the componet is used.
+
+   Not HTML - means, it resembles HTML, while you are actually writing JSX, Which stands for javascriptXML.
+
+   JSX gets converted to regular javascript.
+
+   Babeljs.io/repl is a tool that allows you to see how JSX is transformed into javascript.
+
+
+15. import and export component -----
+
+=> 
+
+
+
+
+
+
+
+   
+
+

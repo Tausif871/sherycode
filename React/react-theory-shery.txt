@@ -1,0 +1,384 @@
+ react is not a language and not a framework and it is not a technology.
+
+
+so what actually react is , react is a js library.
+
+it is build by facebook in 2013 by its engineer.
+
+it is going to be open-source in 2015.
+
+in react have virtual dom , so what actually virtual dom is ?\
+
+=> there are something called real dom , let's assume we create a dom program and we are change a element work   , so it also re-render the all task or repaint all the  elements including changes we make  in  a element so it is called long and inefficient process and it is a big problem in dom .
+
+jb  website pr khoob sara changes hote hai to khub sara repaint hota , wo bhi wo elements jo badle bhi na ho aur ye website ko down kr deta hai , is cheez se bhi bachne ke liye facebook ne react creation kiya.
+
+
+so facebook create virtual dom to resolve that problem.
+
+virtual dom is the exact copy of real dom and if we do any changes it only do changes that particular element and it does not change or repaint all elements.
+
+it is in react.
+
+virtual dom kya krta hai , sirf wo part repaint or re-render karta hai jo change hua ho , jha pr change krna jaruri ho.
+
+react is use to create functional and operationa ui and also animations .
+
+
+
+**** react essentials to know before learning react  --- 
+
+array , object , destructuring , import , export , map , filter , arrow function with implict return , spread operator -  are things necessary to work with react.
+
+
+array -- [1,2,3.5,] - array aisa data structure hota h jo ek se jada elemnts rakh sakta hai.
+
+obj - {}
+
+spread-operator -- ...
+
+destructuring -- 
+
+ex- 1 - value access
+
+var obj = {name:"harsh", age:25}
+
+const{age} = obj;   - destructuring method use to access a value easily and we do not have to write more codes .
+
+age  -- use age 
+
+
+ex - 2 - value asscess and use advance
+
+var obj1 = {
+  name:"string",
+  social:{
+    facebook:{
+      first:"lalala",
+      sec:"dadda"
+    }
+  }
+}
+
+
+const{sec} = obj1.social.facebook 
+
+
+ex - 3 - value asiggn to variable 
+
+a.-
+ 
+var obj2 = [12,function(){}];
+
+var{first, sec} = arr;
+
+b. - 
+
+
+var obj3 = [123,function(){},369];
+
+var{chacaha, , num}
+
+
+
+
+import export --
+
+hum log componenent banate hai , component matalb page ka hissa jaise ki navbar, button , sidebar, cart, homepage, secondpage etc, ab dillat ye aati hai ki har hissa alag lag component hai aur component ko hum log alag alag files mein rakhte hai to niko last mein jodte hai , jdne ke liye import aur export ka use hota hai.
+
+
+navbar - export
+
+sidebar  - export
+
+cart - export
+
+main - import navbar, sidebar , cart.
+
+
+export -  default
+
+function Cart(){
+
+}
+
+export default Cart;
+
+2ns method --  named export
+
+export function Card(){
+
+}
+
+export function Menu(){
+
+}
+
+
+import - 
+
+
+import Cart from "./script2"\
+
+2nd -- 
+
+import{Card,Menu} form"./script2`"
+
+
+
+
+
+arrow function ----
+
+() =>{}
+
+
+const ab = ()=>{};
+
+ab();
+
+
+const cd = ()=>{};
+
+const ef = ()=>{};
+
+const gh = ()=>{
+  return
+};
+
+
+
+advance method to return object in arrow function --
+
+ex - 
+
+const ob = ()=> ({name:"hira", age:12}) 
+
+ -- if we want return object we have use this mtd in react , by using brackets and inside brackest we write our objects using curly braces.
+ like above the line and it is widely used in react .
+
+console.log(ob());
+
+
+
+
+map and filter ---   ye react mein 90 % use hota hai , ye dono hi array pr chalte hai aur dono ka kaam hai array par kuch perform karns and nya array return krna . map aur filter jb bhi chalenge to nya array ayega .
+
+
+map ---- map hr element pr kuch kro and naya array mein rakho . map ke andar return krna bhut zaruri hai or compulsary hai .
+
+map ke andar return kkrne ke wajah se hi elements naye array mein place karte hote hai.
+
+
+foreach -- for each ke andar ek function ata hai and function ke andar aataa hai value. aise hi same hota hai map ke sath .
+
+ex - 
+
+in react we are using arrow function widely and doesn't use normal function.
+
+var arr = [1,2,3,4,5] ;
+
+arr.map((val) => {
+  return val*12;
+})
+
+
+
+
+q - ek array hai saare numbers jo ki 5 se bade ho unmein 5 jod dena and baaki numbers waise ke waise return kro naye array mein.
+
+
+
+var state = [11,22,3,4,5,6,7,8,9,10,11,12,13,14];
+
+
+const ans = state.map(elem => elem> ? elem+ : elem)
+
+
+
+map filter mein ek hi fareak hai , map saare bande lautata hai matlab ki count kam nhi hoga , filter bando ko kum kar sakta hai.\
+
+
+q- ek array mein sabhi numbers jo ki 5 se bade hai unmein 10 add karo ?
+
+
+jab original array ka size kam na hona ho wha map use hota hai  aur jb original array ka size kam krna ho wha filter use hota hai .
+
+
+
+q -  ek array mein mein se saare number hata do jo ki 5 se chote hai?
+
+var ar = [1,2,3,4,5,6];
+
+ar.filter(elem => elem>4);
+
+
+filter true and false conditions pr operate hota hai like above example.
+
+
+ex - 
+
+var a = [
+  {name : "harsh", gender:"male"},
+  {name : "harshita", gender: "female"}
+]
+
+
+const ans = a.filter((elem) => elem.gender === "male")
+
+
+
+
+2 ex - 
+
+
+var ab = [
+  {product : "iphone", price: "1200000"},
+  {product : "airpod", price: "50000"},
+  {product : "ipad", price: "70000"},
+  {product : "munch", price: "15"},
+]
+
+const anss  = ab.filter(elem => elem.price<20)
+
+
+
+
+
+
+
+
+********************
+
+immutable and mutable --  immutable means can't be change and mutable means chanageable.
+
+
+state -- 
+
+react js mein ek state naam ki xhiz milegi , aap usko mutate nhi kr skte matalb ki directly aap uski value nahi hata ya jod sakte .
+aur ab jo padhai hogi wo isi bare mein hongi ki state ko immutable way mein kaise update karein.
+
+immutable way means directly doesn't change we are changeing it indeirect ways  to gibe sate an  array or object .
+
+state ko change krne ke liye phle state ki copy bano by using spread operator and then change the copy value and then assign the copy to state .
+
+
+
+
+
+**** react system setup ----
+
+vs code install
+tabnine extension install 
+prettier extension install
+node js 
+
+
+vite vs create react app  -
+
+
+vite  offers raw react and cra uses next js to make react app.
+
+
+how to create an first react app by using vite  -----
+
+
+We are first go to terminal in vs code or our system.
+
+   1. give command [npm create vite@latest + enter ] it install the latest vite pacakage for our project.
+   2.  it ask to y or no for installation . click y
+   3. it downloaded vite, after it ask that.
+
+   4. it ask, project name - give your project name [you can give any project name] and ask for package name hit enter.
+
+   5. after that it ask for, framework select react as framework.
+
+   6. after that it ask for variant or language, select javascript.
+
+   7. it show done means it creates the project . after that it show us some command to run the project.
+
+   8. commands are like - [cd first-react-app, npm install, npm run dev]
+
+   9. cd first-react-app - it select the first-react-app folder or project that we are created.
+
+   10. npm install - it install the node pacakge manager's files or dependecies.
+
+   11. npm run dev - it launches our file into a server so we can see our projects and we do any changes it shows us in that server.
+
+
+
+
+Project structure?
+
+=> 
+   1. node modules - node modules is a ideally a node package that we do not have to do any changes or no touch that folder. in node modules  have dependecies of node. 
+
+   2. public - it contains staic files or assets in that folder that file don't change. means it have images, favicons etc.
+
+   3. src - it is our main folder or material and it have our actual source code where we keep coding files in it . inside src folder we create 3 folder to work to write our code , so these folder are - components, assets, and style. 
+
+   assets - it have our images, fonts, and other static files.
+
+   components - reusable parts of the ui like buttons, header , nav etc.
+
+   style - our css code file.
+
+   it is a covention means it is a stuructures format of code.
+
+
+   4. eslintrc.cjs - it show us warning if we do some mistakes in our code and it shows our code is slow or fast.
+
+   5. .gitignore - it help us to ignore the files we want to ignore .
+
+   6. index.html - it the first file have our basic code.
+
+   7. package.json - it is a meta-data file means it have all information of our project, we can also change our name, version etc.
+
+   8.  vite.cofig.js - it the vite's own config file also we can modify vite .
+
+   9. pacakage-lock.json - it show current value of our project and dependencies.
+
+
+
+ what is the react file extension?
+
+=> .js - it is use for javascript. it contains regular javascript code.
+
+   .jsx - it is use for react . it means javasceipt xml it combines js with html like tags, it makes it easier to design ui components.
+
+   jsx is actually a very similar looking structure like HTML but with super powers so we can literally use logic in HTML. 
+
+   jsx sirf dikhta hai html is ki tarah pr hota nhi hai.  but it actually converts into  react.createcreateElement.
+
+
+
+
+
+
+   
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
